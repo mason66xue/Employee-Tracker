@@ -27,6 +27,23 @@
 
 // class - for database or database access object
 //  1. constructor - takes in database connection as input parameter and assign it to the instant variable
+const menuPrompt= () =>{
+  inquirer
+  .promt({
+    name: 'choices',
+    type: 'list',
+    message:'What would you like to do?',
+    choices:[
+      'View All Employees',
+      'Add Employee',
+      'Update Employee',
+      'View All Roles',
+      'Add Role',
+      'View All Departments',
+      'Add Department'
+    ]
+  })
+}
 //  2. method - find all employees, join with roles and departments to display their roles, salaries, departments, and managers
 //  3. method - create a new employee - takes employee object as input parameter
 //  4. method - update employee's role - takes employee id and role id as input parameters
@@ -34,6 +51,7 @@
 //  6. method - create a new role - takes in role object as input parameter
 //  7. method - find all departments
 //  8. method - create a new department - takes in department object as input parameter
+
 
 // ================
 // OPTIONAL METHODS
