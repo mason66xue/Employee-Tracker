@@ -5,8 +5,8 @@ const connection = mysql.createConnection({
   // Your username
   user: "root",
   // Your password
-  password: "<your_password>",
-  database: "<your_database>"
+  password: "Password123!",
+  database: "cms_db"
 });
 
 connection.connect(function (err) {
