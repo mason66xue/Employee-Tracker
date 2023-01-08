@@ -20,6 +20,24 @@ require("console.table");
 
 // function - main prompt for questions
 // - Prompt with the list of choices
+const menuPrompt= () =>{
+  inquirer
+  .promt({
+    name: 'choices',
+    type: 'list',
+    message:'What would you like to do?',
+    choices:[
+      'View All Employees',
+      'Add Employee',
+      'Update Employee',
+      'View All Roles',
+      'Add Role',
+      'View All Departments',
+      'Add Department',
+      'Exit'
+    ]
+  })
+}
 // - In .then callback, check user's response with the switch-case statement.
 //    call the appropriate function depending on what the user chose
 //      - in case of view employees, call the view employees function
