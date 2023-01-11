@@ -38,6 +38,7 @@ const menuPrompt= () =>{
     ]
   })
 }
+
 // - In .then callback, check user's response with the switch-case statement.
 //    call the appropriate function depending on what the user chose
 //      - in case of view employees, call the view employees function
