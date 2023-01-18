@@ -21,10 +21,10 @@ VALUE
 -- INSERT INTO your_table_for_employees
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUE
-('Ruochen','Liu',3,),
-('Ian','Patterson',2),
-('Sophia','Kim',4),
-('Taylor','Swift',1),
-('Neha','Patel', 4),
+('Ruochen','Liu',3,null),
+('Ian','Patterson',2,1),
+('Sophia','Kim',4 null),
+('Taylor','Swift',1, 3),
+('Neha','Patel', 4, null),
 ('Mike','Netta',2),
-('Alice','Dunn',3),
+('Alice','Dunn',3,7);

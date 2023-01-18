@@ -22,21 +22,60 @@ mainMenu();
 
 // function - main prompt for questions
 // - Prompt with the list of choices
-const mainMenu= () =>{
+function mainMenu (){
   inquirer
-  .promt({
-    name: 'choices',
+  .promt(
+    {
     type: 'list',
     message:'What would you like to do?',
+    name: 'main',
     choices:[
-      'View All Employees',
-      'Add Employee',
-      'Update Employee',
-      'View All Roles',
-      'Add Role',
-      'View All Departments',
-      'Add Department',
-      'Exit'
+      {
+      name: 'View All Employees',
+      value: 'view_employees'
+      },
+      {
+        name: 'view managers',
+        value: 'view Managers'
+      },
+      {
+        name: 'add employee',
+        value: 'add_employee'
+      },
+      {
+        name: 'update employee manager',
+        value: 'update manager'
+      },
+      {
+        name: 'view all roles',
+        value: 'view_roles'
+      },
+      {
+        name: 'add role',
+        value: 'add_role'
+      },
+      {
+        name: 'delete role',
+        value: 'delete_role'
+      },
+      {
+        name: 'view all departement',
+        value: 'view_department',
+      },
+      {
+        name:'add department',
+        value:'add_department'
+      },
+      {
+        name: 'delete department',
+        value: 'delete_department'
+      },
+      {
+        name: 'quit',
+        value:'quit'
+      }
+
+      
     ]
   })
 }
